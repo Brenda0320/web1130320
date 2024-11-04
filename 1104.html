@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>1104上課筆記</title>
+    <meta charset="UTF-8">
+    <style>
+        #num {
+            font-size: 50pt;
+        }
+    </style>
+    <script>
+        t1=0;
+        function rollingDice() {
+            dice=getRandNum
+            //get("dice").src="pic/"+.png"/
+            h=getRandNum(0,360);
+        }
+        function setInterval(){
+            if(t1==0) {
+                t1=setInterval(rollingDice,50)
+                setTimeout(stopInterval)
+            }
+        }
+        function stopInterval() {
+            clearInterval(t1);
+            t1=0;
+            get("msg").innerHTML="你得到"+dice+"點!"
+        }
+    </script>
+</head>
+<body>
+    <button onclick="starIterval();">開始</button>
+    <button onclick="stopInterval();">結束</button>
+    <hr>
+    <img id="dice" src="pic/0.png">
+    <div id="num">00</div>
+</body>
+</html>
